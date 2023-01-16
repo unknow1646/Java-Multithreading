@@ -5,7 +5,6 @@ public class Main {
 
             Thread thread = new Thread(new BlockingTask());
             thread.start();
-            Thread.sleep(5000);
             thread.interrupt();
         }
 
@@ -19,7 +18,6 @@ public class Main {
                 } catch (InterruptedException e){
                     System.out.println("Exiting blocking thread ...");
                 }
-
             }
         }
     }

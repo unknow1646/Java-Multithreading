@@ -12,11 +12,8 @@ public class Main {
 
         });
 
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread thread1 = new Thread(() -> {
 
-            }
         });
 
 

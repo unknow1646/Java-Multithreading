@@ -8,9 +8,8 @@ public class Main {
                 new Thread(new LongComputationTask2(new BigInteger("200000"), new BigInteger("10000000000")));
 
         thread.setDaemon(true);
-        thread.start();
         Thread.sleep(100);
-        thread.interrupt();
+        thread.start();
     }
     private static class LongComputationTask2 implements Runnable{
         private final BigInteger base;
